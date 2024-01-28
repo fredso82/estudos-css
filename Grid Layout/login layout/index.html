@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: white;
+            display: grid;
+            place-items: center;
+            height: 100vh;
+            width: 100vw;
+        }
+
+        .container {
+            background-color: rgb(6, 6, 6);
+            color: white;
+            display: grid;
+            padding: 20px;
+            width: 30vw;      
+            border-radius: 10px;      
+        }
+
+        .container .head {
+            border-bottom: 1px solid white;
+            padding-bottom: 5px;
+            font-size: 1.7rem;
+            text-align: center;
+        }
+
+        .container input {
+            height: 40px;
+            margin-top: 5px;
+            font-size: 1.6rem;
+        }
+
+        .container input[type=text] {
+            border: none;
+            border-bottom: 1px solid white;
+            background-color: rgb(6, 6, 6);
+            color: white;
+        }
+
+        .container input[type=text]:focus {
+            outline: none;            
+        }
+
+        .container .form {
+            margin-top: 20px;
+            display: grid;
+        }
+
+        .container .form input[type=button] {
+            background-color: transparent;
+            color: white;
+            outline: 1px solid white;
+            cursor: pointer;
+        }
+
+        .container .form input[type=button]:hover {
+            outline: 2px solid white;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="head">Faça Login</div>
+        <div class="form">
+            <label for="login">Login</label>
+            <input type="text" id="login">
+        </div>
+        <div class="form">
+            <label for="senha">Senha</label>
+            <input type="text" id="senha"></input>
+        </div>
+        <div class="form">
+            <input type="button" value="Entrar" />
+        </div>
+    </div>
+</body>
+</html>
