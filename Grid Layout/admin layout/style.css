@@ -1,11 +1,11 @@
 body {
     margin: 0;
     padding: 0;
-    background-color: rgb(209, 212, 214);
+    background-color: rgb(255, 255, 255);
     box-sizing: border-box;
     display: grid;
     grid-template-columns: 200px 1fr;
-    grid-template-rows: 50px 1fr 50px;
+    grid-template-rows: 50px 1fr 40px;
     /* grid-column-gap: 1px;
     grid-row-gap: 1px; */
     grid-template-areas: 
@@ -15,22 +15,71 @@ body {
     height: 100vh;
 }
 
+
 header {
-    background-color: rgb(131, 142, 223);
+    background-color: rgb(244, 244, 245);
     grid-area: header;
+    display: grid;
+    grid-template-columns: 1fr 40px;
+    gap: 5px;
+    padding: 5px;
 }
 
-aside {
-    background-color: rgb(197, 104, 104);
-    grid-area: aside;
+header .pesquisar {
+    border: none;
+    border-bottom: 1px solid rgb(182, 181, 181);
 }
 
-main {
-    background-color: rgb(133, 120, 145);
-    grid-area: main
+header .pesquisar:focus {
+    outline: none;
+}
+
+header .sair {
+    text-align: center;
+    padding: 10px;
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+}
+header .sair:hover {
+    font-size: 1.1rem;
 }
 
 footer {
-    background-color: brown;
+    background-color: rgb(244, 244, 245);
     grid-area: footer;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 15px;
+    align-items: center;
 }
+
+aside {
+    background-color: rgb(224, 224, 224);
+    grid-area: aside;
+}
+
+.logo {
+    text-align: center;
+    padding: 15px 0;
+    background-color: antiquewhite;
+}
+.menu_pai {
+    padding: 0;
+    list-style-type: none;
+}
+.menu_item {
+    cursor: pointer;
+    padding: 8px 8px 8px 20px;
+}
+
+.menu_item:hover {
+    background-color: rgb(208, 202, 212);
+}
+
+main {
+    /* background-color: rgb(133, 120, 145); */
+    grid-area: main;
+    padding: 10px;
+}
+
